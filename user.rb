@@ -60,7 +60,7 @@ end
 inno = User.new
 
 
-=begin
+#=begin
 puts inno.create(
    {
    firstname: "innoe",
@@ -70,7 +70,7 @@ puts inno.create(
    email: "innoe@yahoo.com"
    }
 )
-=end
+#=end
 
 #puts inno.find(1)
 
