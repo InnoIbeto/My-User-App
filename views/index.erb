@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Users index page</title>
+        <title align = "center">Users Table index page</title>
     </head>
     <body>
-        <h1>Users</h1>
-        <table>
+        <h1 align = "center">My App Users Table</h1>
+        <table align = "center" border = "5">
 
-            <tr>
-                <th>inno</th>
-                <th>ibeto</th>
-                <th>20</th>
-                <th>inno.ibeto@gmail.com</th>
+            <tr style = "color: blue; font-family: Allura">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Email</th>
             </tr>
+
+            <%@innos_users.each do |user_info|%>
+              <tr style = "color: black; font-family: Comic Sans">
+                  <td><%= user_info[1].to_json %></td>
+                  <td><%= user_info[2].to_json %></td>
+                  <td><%= user_info[3].to_json %></td>
+                  <td><%= user_info[5].to_json %></td>
+              </tr>
+            <%end%>
 
         </table>
     </body>
